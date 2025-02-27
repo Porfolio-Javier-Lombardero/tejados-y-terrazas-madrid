@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  <meta name="robots" content="noindex, nofollow">
+
+
+  <!--vendor css ================================================== -->
+  <link rel="stylesheet" type="text/css" href="css/vendor.css">
+
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+  <!--Bootstrap ================================================== -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
+
+  <!-- Style Sheet ================================================== -->
+  <link rel="stylesheet" type="text/css" href="styles.css">
+
+  <!-- Google Fonts ================================================== -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,700;1,300&family=Roboto:wght@300;400;700&display=swap"
+    rel="stylesheet">
+
+
+  <!-- script ================================================== -->
+  <script src="js/modernizr.js"></script>
+
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#header-nav" tabindex="0">
+
+
+  <nav class="navbar navbar-expand-lg bg-white navbar-light container-fluid py-3 position-fixed ">
+    <div class="container">
+      <a class="navbar-brand" href="index.html"><img src="images/main-logo.png" alt="logo"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+        aria-controls="offcanvasNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav align-items-center justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link text-uppercase  px-3" aria-current="page" href="index.html">home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-uppercase  px-3" href="#">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-uppercase  px-3" href="#">about</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-uppercase  px-3" href="#">projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-uppercase  px-3" href="#">blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-uppercase  px-3" href="#">Contact</a>
+            </li>
+
+
+            <li class="nav-item dropdown">
+              <a class="nav-link text-uppercase  dropdown-toggle text-center" data-bs-toggle="dropdown" href="#" role="button"
+                aria-expanded="false">Pages</a>
+              <ul class="dropdown-menu">
+                <li><a href="about.html" class="dropdown-item text-uppercase ">About <span
+                      class="badge bg-secondary">Pro</span></a></li>
+                <li><a href="blog.html" class="dropdown-item text-uppercase ">Blog <span
+                      class="badge bg-secondary">Pro</span></a></li>
+                <li><a href="blog-single.html" class="dropdown-item text-uppercase ">Blog-Single <span
+                      class="badge bg-secondary">Pro</span></a></li>
+                <li><a href="booking.html" class="dropdown-item text-uppercase ">Booking <span
+                      class="badge bg-secondary">Pro</span></a></li>
+                <li><a href="services.html" class="dropdown-item text-uppercase ">Services <span
+                      class="badge bg-secondary">Pro</span></a></li>
+                <li><a href="services-single.html" class="dropdown-item text-uppercase ">Service-Single
+                    <span class="badge bg-secondary">Pro</span></a></li>
+                <li><a href="project.html" class="dropdown-item text-uppercase ">Project <span
+                      class="badge bg-secondary">Pro</span></a></li>
+                <li><a href="project-single.html" class="dropdown-item text-uppercase ">Project-Single
+                    <span class="badge bg-secondary">Pro</span></a></li>
+                <li><a href="pricing.html" class="dropdown-item text-uppercase ">Pricing <span
+                      class="badge bg-secondary">Pro</span></a></li>
+                <li><a href="contact.html" class="dropdown-item text-uppercase ">Contact <span
+                      class="badge bg-secondary">Pro</span></a></li>
+                <li><a href="team.html" class="dropdown-item text-uppercase ">Our Team <span
+                      class="badge bg-secondary">Pro</span></a></li>
+                <li><a href="review.html" class="dropdown-item text-uppercase ">Reviews <span
+                      class="badge bg-secondary">Pro</span></a></li>
+                <li><a href="faq.html" class="dropdown-item text-uppercase ">FAQs <span
+                      class="badge bg-secondary">Pro</span></a></li>
+              </ul>
+            </li>
+          </ul>
+
+          <div class="d-flex mt-5 mt-lg-0 ps-lg-5 align-items-center justify-content-center ">
+            <ul class="navbar-nav justify-content-end align-items-center">
+              <li class="nav-item">
+                <a class="nav-link px-3 phone-no" href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path
+                      d="M18.3274 22.5001C17.4124 22.5001 16.1271 22.1691 14.2024 21.0938C11.862 19.7813 10.0516 18.5696 7.72383 16.2479C5.47946 14.0049 4.38727 12.5527 2.85868 9.77115C1.1318 6.63052 1.42618 4.98427 1.75524 4.28068C2.14712 3.43974 2.72555 2.93677 3.47321 2.43755C3.89787 2.15932 4.34727 1.92081 4.81571 1.72505C4.86258 1.7049 4.90618 1.68568 4.94508 1.66833C5.17712 1.5638 5.52868 1.40583 5.97399 1.57458C6.27118 1.68615 6.53649 1.91443 6.9518 2.32458C7.80352 3.16458 8.96743 5.03537 9.3968 5.95412C9.68508 6.57333 9.87587 6.98208 9.87633 7.44052C9.87633 7.97724 9.60633 8.39115 9.27868 8.83787C9.21727 8.92177 9.15633 9.00193 9.09727 9.07974C8.74055 9.54849 8.66227 9.68396 8.71383 9.92583C8.81837 10.4119 9.5979 11.859 10.879 13.1372C12.1601 14.4155 13.5654 15.1458 14.0534 15.2499C14.3056 15.3038 14.4438 15.2222 14.9276 14.8529C14.997 14.7999 15.0682 14.7451 15.1427 14.6902C15.6424 14.3185 16.0371 14.0555 16.5612 14.0555H16.564C17.0201 14.0555 17.4106 14.2533 18.0574 14.5796C18.9012 15.0052 20.8282 16.1541 21.6734 17.0068C22.0845 17.4211 22.3137 17.6855 22.4257 17.9822C22.5945 18.429 22.4356 18.7791 22.332 19.0135C22.3146 19.0524 22.2954 19.0951 22.2752 19.1424C22.0779 19.61 21.838 20.0585 21.5585 20.4821C21.0602 21.2274 20.5554 21.8044 19.7126 22.1968C19.2798 22.4015 18.8062 22.5052 18.3274 22.5001Z"
+                      fill="#313131" />
+                  </svg>
+                  (+487) 384 9452
+                </a>
+              </li>
+            </ul>
+            <button type="button" class="btn btn-primary ms-md-3"> Get in touch </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <section id="hero" style="background: url(images/banner2.jpg);">
+    <div class="container pt-5">
+      <div class="row py-5 mt-5">
+        <div class="d-flex flex-wrap flex-column justify-content-center align-items-center my-5 py-5 text-white">
+          <h2 class="text-white fw-bold display-2  mt-5">Blog-Single</h2>
+
+          <nav class="breadcrumb mb-5">
+            <a class="breadcrumb-item text-white" href="index.html">Home</a>
+            <span class="breadcrumb-item active text-white" aria-current="page">Blog-Single</span>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <div class="post-wrap py-5 no-padding-bottom">
+    <div class="container">
+      <div class="row g-5 mt-4">
+        <main class="post-grid col-md-9">
+          <div class="row">
+            <article class="post-item">
+              <h2 class="blog-title mb-4">Main thing to remember while roofing</h2>
+
+              <div class="hero-image">
+                <img src="images/blog-large.jpg" alt="single-post" class="img-fluid">
+              </div>
+              <div class="post-content py-5">
+                <div class="post-description">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consectetur facilisis vivamus massa magna.
+                    Blandit mauris libero condimentum commodo morbi consectetur sociis convallis sit. Magna diam amet
+                    justo sed vel dolor et volutpat integer. Iaculis sit sapien hac odio elementum egestas neque.
+                    Adipiscing purus euismod orci sem amet, et. Turpis erat ornare nisi laoreet est euismod.</p>
+                  <p>Sit suscipit tortor turpis sed fringilla lectus facilisis amet. Ipsum, amet dolor curabitur non
+                    aliquet orci urna volutpat. Id aliquam neque, ut vivamus sit imperdiet enim, lacus, vel. Morbi arcu
+                    amet, nulla fermentum vitae mattis arcu mi convallis. Urna in sollicitudin in vestibulum erat.
+                    Turpis faucibus augue ipsum, at aliquam. Cras sagittis tellus nunc integer vitae neque bibendum
+                    eget. Tempus malesuada et pellentesque maecenas. Sociis porttitor elit tincidunt tellus sit ornare.
+                    Purus ut quis sed venenatis eget ut ipsum, enim lacus. Praesent imperdiet vitae eu, eu tincidunt
+                    nunc integer sit.</p>
+                  <blockquote>“Sit suscipit tortor turpis sed fringilla lectus facilisis amet. Ipsum, amet dolor
+                    curabitur non aliquet orci urna volutpat. Id aliquam neque, ut vivamus sit imperdiet enim, lacus,
+                    vel.</blockquote>
+                  <h4 class="mt-4">Consectetur Facilisis Vivamus</h4>
+                  <ul class="inner-list mb-4">
+                    <li>Blandit mauris libero condimentum commodo sociis convallis sit.</li>
+                    <li>Magna diam amet justo sed vel dolor et volutpat integer.</li>
+                    <li>Laculis sit sapien hac odio elementum egestas neque.</li>
+                  </ul>
+                  <p>Morbi arcu amet, nulla fermentum vitae mattis arcu mi convallis. Urna in sollicitudin in vestibulum
+                    erat. Turpis faucibus augue ipsum, at aliquam. Cras sagittis tellus nunc integer vitae neque
+                    bibendum eget. Tempus malesuada et pellentesque maecenas. Sociis porttitor elit tincidunt tellus sit
+                    ornare. Purus ut ipsum, enim lacus. Praesent imperdiet vitae eu, eu tincidunt nunc integer sit.</p>
+                  <p>Tortor diam dignissim amet, in interdum aliquet. Magnis dictum et eros purus fermentum, massa
+                    ullamcorper sit sollicitudin. Nascetur libero elementum adipiscing mauris maecenas et magna. Etiam
+                    nec, rutrum a diam lacus, nunc integer etiam. Mattis pulvinar non viverra donec pellentesque. Odio
+                    mi consequat libero dolor. Porta ut diam lobortis eget leo, lectus. Nunc tempus feugiat massa
+                    laoreet ultrices diam magna quam. Congue auctor auctor luctus neque. Enim lorem ultrices diam donec.
+                    Sed id placerat consectetur faucibus.</p>
+                  <div class="row my-4">
+                    <div class="col-md-6">
+                      <img src="images/blog9.jpg" alt="post-image" class=" img-fluid align-left">
+                      <h5 class="text-center mt-3">Velit, praesent pharetra malesuada</h5>
+                    </div>
+                    <div class="col-md-6">
+                      <img src="images/blog5.jpg" alt="post-image" class=" img-fluid align-right">
+                      <h5 class="text-center mt-3">Velit, praesent pharetra malesuada</h5>
+                    </div>
+                  </div>
+
+                  <p>Id pulvinar amet. Consequat potenti mollis massa iaculis et, dolor, eget lectus. Aliquam
+                    pellentesque molestie felis fames sed eget non euismod eget. Et eget ullamcorper urna, elit ac diam
+                    tellus viverra lacus.</p>
+                  <p>Tortor diam dignissim amet, in interdum aliquet. Magnis dictum et eros purus fermentum, massa
+                    ullamcorper sit sollicitudin. Nascetur libero elementum adipiscing mauris maecenas et magna. Etiam
+                    nec, rutrum a diam lacus, nunc integer etiam. Mattis pulvinar non viverra donec pellentesque. Odio
+                    mi consequat libero dolor. Porta ut diam lobortis eget leo, lectus.</p>
+                  <p>Velit, praesent pharetra malesuada id pulvinar amet. Consequat potenti mollis massa iaculis et,
+                    dolor, eget lectus. Aliquam pellentesque molestie felis fames sed eget non euismod eget. Et eget
+                    ullamcorper urna, elit ac diam tellus viverra lacus.</p>
+                  <p>Tortor diam dignissim amet, in interdum aliquet. Magnis dictum et eros purus fermentum, massa
+                    ullamcorper sit sollicitudin. Nascetur libero elementum adipiscing mauris maecenas et magna. Etiam
+                    nec, rutrum a diam lacus, nunc integer etiam. Mattis pulvinar non viverra donec pellentesque. Odio
+                    mi consequat libero dolor. Porta ut diam lobortis eget leo, lectus.</p>
+                  <div class="post-bottom-link d-md-flex justify-content-between my-5">
+                    <div class="block-tag">
+                      <ul class="list-unstyled text-decoration-underline d-flex ">
+                        <li class="me-3">
+                          <a href="#">Roofs</a>
+                        </li>
+                        <li class="me-3">
+                          <a href="#">Roofing</a>
+                        </li>
+                        <li class="me-3">
+                          <a href="#">Business</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="block-social-links d-flex">
+                      <div class="element-title text-uppercase pe-4">Share:</div>
+                      <ul class="list-unstyled d-flex gap-3 m-0 ">
+                        <li>
+                          <a href="#" class="text-secondary p-0">
+                            <iconify-icon icon="ri:facebook-fill" class="social-icon "></iconify-icon>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#" class="text-secondary p-0">
+                            <iconify-icon icon="ri:instagram-line" class="social-icon "></iconify-icon>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#" class="text-secondary p-0">
+                            <iconify-icon icon="ri:twitter-fill" class="social-icon "></iconify-icon>
+
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#" class="text-secondary p-0">
+                            <iconify-icon icon="ri:youtube-fill" class="social-icon "></iconify-icon>
+
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#" class="text-secondary p-0">
+                            <iconify-icon icon="ri:linkedin-fill" class="social-icon "></iconify-icon>
+
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div id="single-post-navigation">
+                  <div class="post-navigation d-flex justify-content-between">
+                    <a  class="post-prev text-decoration-none" href="#">
+                      <iconify-icon icon="solar:arrow-left-linear" class="pagination-arrow"></iconify-icon>
+                      <span class="page-nav-title  text-uppercase ms-2">How to take care of your cars</span>
+                    </a>
+                    <a  class="post-next text-decoration-none" href="#">
+                      <span class="page-nav-title  text-uppercase me-2">Summer tips for truck owners</span>
+                      <iconify-icon icon="solar:arrow-right-linear" class="pagination-arrow"></iconify-icon>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </article>
+            <div id="post-author-info" class="border-top border-bottom py-4">
+              <div class="row d-flex align-items-center">
+                <div class="col-md-3">
+                  <div class="image-holder">
+                    <a  href="#">
+                      <img src="images/blog7.jpg" class="img-fluid" alt="author">
+                    </a>
+                  </div>
+                </div>
+                <div class="col-md-9">
+                  <div class="post-author-content">
+                    <div class="element-title text-uppercase">
+                      <a  href="#" class="text-decoration-none fw-bold fs-4">James Younes</a>
+                    </div>
+                    <span class="author-position">Roofing Expert</span>
+                    <p class="mt-3">Nascetur libero elementum adipiscing mauris maecenas et magna. Etiam nec, rutrum a
+                      diam lacus,
+                      nunc integer etiam. Mattis pulvinar non viverra donec pellentesque. Odio mi consequat libero
+                      dolor. Porta ut diam lobortis eget leo, lectus. Tortor diam dignissim amet, in interdum aliquet.
+                      Magnis dictum et eros purus fermentum, massa ullamcorper sit sollicitudin.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <section id="post-comment">
+              <div class="container">
+                <div class="row my-5">
+                  <div class="comments-wrap">
+                    <h3 class="text-uppercase mb-5">
+                      <span class="count">3</span> Comments
+                    </h3>
+                    <div class="comment-list">
+                      <article class="comment-item pb-3 row">
+                        <div class="col-md-2">
+                          <img src="images/commentor-item1.jpg" alt="default"
+                            class="commentor-image img-fluid rounded-circle">
+                        </div>
+                        <div class="col-md-10">
+                          <div class="author-post mb-4">
+                            <div class="comment-meta text-uppercase d-flex gap-3 text-black">
+                              <div class="author-name fw-semibold">Lufy carlson</div>
+                              <span class="meta-date">Jul 10</span>
+                            </div>
+                            <p>Tristique tempis condimentum diam done ullancomroer sit element henddg sit he
+                              consequert.Tristique tempis condimentum diam done ullancomroer sit element henddg sit he
+                              consequert.</p>
+                            <div class="comments-reply border-animation">
+                              <a href="#">
+                                <i class="icon icon-mail-reply"></i>Reply </a>
+                            </div>
+                          </div>
+                        </div>
+                      </article>
+                      <article class="comment-item pb-3 row child-comments">
+                        <div class="col-md-2">
+                          <img src="images/commentor-item2.jpg" alt="default"
+                            class="commentor-image img-fluid rounded-circle">
+                        </div>
+                        <div class="col-md-10">
+                          <div class="author-post mb-4">
+                            <div class="comment-meta text-uppercase d-flex gap-3 text-black ">
+                              <div class="author-name fw-semibold">Lora leigh</div>
+                              <span class="meta-date">Jul 10</span>
+                            </div>
+                            <p>Tristique tempis condimentum diam done ullancomroer sit element henddg sit he
+                              consequert.Tristique tempis condimentum diam done ullancomroer sit element henddg sit he
+                              consequert.</p>
+                            <div class="comments-reply border-animation">
+                              <a href="#">
+                                <i class="icon icon-mail-reply"></i>Reply </a>
+                            </div>
+                          </div>
+                        </div>
+                      </article>
+                      <article class="comment-item pb-3 row">
+                        <div class="col-md-2">
+                          <img src="images/commentor-item3.jpg" alt="default"
+                            class="commentor-image img-fluid rounded-circle">
+                        </div>
+                        <div class="col-md-10">
+                          <div class="author-post mb-4">
+                            <div class="comment-meta text-uppercase d-flex gap-3 text-black ">
+                              <div class="author-name fw-semibold">Natalie dormer</div>
+                              <span class="meta-date">Jul 10</span>
+                            </div>
+                            <p>Tristique tempis condimentum diam done ullancomroer sit element henddg sit he
+                              consequert.Tristique tempis condimentum diam done ullancomroer sit element henddg sit he
+                              consequert.</p>
+                            <div class="comments-reply border-animation">
+                              <a href="#">
+                                <i class="icon icon-mail-reply"></i>Reply </a>
+                            </div>
+                          </div>
+                        </div>
+                      </article>
+                    </div>
+                  </div>
+                  <div class="comment-respond my-5">
+                    <h3 class="text-uppercase">Leave a Comment</h3>
+                    <p>Your email address will not be published. Required fields are marked *</p>
+                    <form method="post" class="form-group padding-small">
+                      <div class="row">
+                        <div class="col-lg-12 mb-3">
+                          <textarea class="form-control ps-3 pt-3" id="comment" name="comment"
+                            placeholder="Write your comment here *"></textarea>
+                        </div>
+                        <div class="col-lg-6 mb-3">
+                          <input class="form-control ps-3" type="text" name="author" id="author"
+                            placeholder="Write your full name here *">
+                        </div>
+                        <div class="col-lg-6">
+                          <input class="form-control ps-3" type="email" name="email" id="email"
+                            placeholder="Write your e-mail address *">
+                        </div>
+                        <div class="col-lg-12">
+                          <label class="d-flex align-items-center">
+                            <input type="checkbox" class="checked-box me-2">
+                            <span class="label-body">Save my name, email, and website in this browser for the next
+                              time.</span>
+                          </label>
+                        </div>
+                        <div class="col-lg-12 mt-3">
+                          <button class="btn btn-lg btn-primary text-uppercase btn-rounded-none w-100"
+                            type="submit">Post Comment</button>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </main>
+        <aside class="col-md-3">
+          <div class="post-sidebar">
+            <form role="search" method="get" class="mb-5">
+              <div class="wp-block-search d-flex border p-2">
+                <input type="search" class="form-control border-0 focus-ring-light" name="s" value=""
+                  placeholder="Search" required="">
+                <button type="submit" class="border-0 bg-transparent"><iconify-icon
+                    icon="ic:outline-search"></iconify-icon></button>
+              </div>
+            </form>
+            <div class="widget sidebar-categories border-animation-left mb-5">
+              <h5 class="widget-title text-uppercase border-bottom pb-3 mb-3">Categories</h5>
+              <ul class="list-unstyled">
+                <li>
+                  <a href="#" class="item-anchor text-decoration-none">All</a>
+                </li>
+                <li>
+                  <a href="#" class="item-anchor text-decoration-none">Roofing</a>
+                </li>
+                <li>
+                  <a href="#" class="item-anchor text-decoration-none">Installation</a>
+                </li>
+                <li>
+                  <a href="#" class="item-anchor text-decoration-none">Cleaning</a>
+                </li>
+                <li>
+                  <a href="#" class="item-anchor text-decoration-none">Tiles</a>
+                </li>
+              </ul>
+            </div>
+            <div class="widget block-tag mb-5">
+              <h5 class="widget-title text-uppercase border-bottom pb-3 mb-3">Tags</h5>
+              <ul class="list-unstyled d-flex flex-wrap gap-2">
+                <li>
+                  <a href="#" class="btn btn-outline-secondary">Roofing</a>
+                </li>
+                <li>
+                  <a href="#" class="btn btn-outline-secondary">Installation</a>
+                </li>
+                <li>
+                  <a href="#" class="btn btn-outline-secondary">Cleaning</a>
+                </li>
+                <li>
+                  <a href="#" class="btn btn-outline-secondary">Modify</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="widget sidebar-recent-post mb-5">
+              <h5 class="widget-title text-uppercase border-bottom pb-3 mb-3">Recent Posts</h5>
+              <div class="sidebar-post-item d-flex justify-content-center">
+                <div class="row">
+                  <div class="col-md-4">
+                    <div class="image-holder">
+                      <a href="#">
+                        <img src="images/blog1.jpg" alt="blog" class="img-fluid">
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-md-8">
+                    <div class="sidebar-post-content text-uppercase">
+                      <div class="post-meta fs-6 text-secondary">
+                        <span class="meta-date">jul 11, 2022</span>
+                      </div>
+                      <h5 class="post-title">
+                        <a href="#">How to clean roof properly</a>
+                      </h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="sidebar-post-item d-flex justify-content-center">
+                <div class="row">
+                  <div class="col-md-4">
+                    <div class="image-holder">
+                      <a href="#">
+                        <img src="images/blog2.jpg" alt="blog" class="img-fluid">
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-md-8">
+                    <div class="sidebar-post-content text-uppercase">
+                      <div class="post-meta fs-6 text-secondary">
+                        <span class="meta-date">jul 18, 2022</span>
+                      </div>
+                      <h5 class="post-title">
+                        <a href="#">Top 10 hacks for cleaning </a>
+                      </h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="sidebar-post-item d-flex justify-content-center">
+                <div class="row">
+                  <div class="col-md-4">
+                    <div class="image-holder">
+                      <a href="#">
+                        <img src="images/blog3.jpg" alt="blog" class="img-fluid">
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-md-8">
+                    <div class="sidebar-post-content text-uppercase">
+                      <div class="post-meta fs-6 text-secondary">
+                        <span class="meta-date">Aug 21, 2022</span>
+                      </div>
+                      <h5 class="post-title">
+                        <a href="#">Best ways to clean your tiles</a>
+                      </h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="widget sidebar-social-links border-animation-left">
+              <h5 class="widget-title text-uppercase border-bottom pb-3 mb-3">Follow us:</h5>
+              <ul class="list-unstyled">
+                <li>
+                  <a href="#" class="item-anchor">Facebook</a>
+                </li>
+                <li>
+                  <a href="#" class="item-anchor">Twitter</a>
+                </li>
+                <li>
+                  <a href="#" class="item-anchor">Pinterest</a>
+                </li>
+                <li>
+                  <a href="#" class="item-anchor">Youtube</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </div>
+
+  <section class="related-post post-wrap py-4">
+    <div class="container">
+      <div class="section-header d-flex align-items-center justify-content-between">
+        <h2 class="section-title text-uppercase mb-5">Related Posts</h2>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <article class="post-item pb-5">
+            <div class="post-image">
+              <a href="blog-single.html"><img src="images/blog5.jpg" alt="image" class="img-fluid"></a>
+            </div>
+            <div class="post-content">
+              <a href="#" class="text-decoration-none">
+                <p class="blog-topic text-uppercase mt-3">Roofs / 12 jan, 2022</p>
+              </a>
+              <a href="#" class="text-decoration-none">
+                <h4 class="blog-title my-3">Main thing to remember while Roofing</h4>
+              </a>
+              <p>Dignissim lacus, turpis ut suspendisse vel tellus. Turpis purus, gravida orci,
+                fringilla...</p>
+            </div>
+          </article>
+        </div>
+        <div class="col-md-4">
+          <article class="post-item pb-5">
+            <div class="post-image">
+              <a href="blog-single.html"><img src="images/blog6.jpg" alt="image" class="img-fluid"></a>
+            </div>
+            <div class="post-content">
+              <a href="#" class="text-decoration-none">
+                <p class="blog-topic text-uppercase mt-3">Roofs / 12 jan, 2022</p>
+              </a>
+              <a href="#" class="text-decoration-none">
+                <h4 class="blog-title my-3">Main thing to remember while Roofing</h4>
+              </a>
+              <p>Dignissim lacus, turpis ut suspendisse vel tellus. Turpis purus, gravida orci,
+                fringilla...</p>
+            </div>
+          </article>
+        </div>
+        <div class="col-md-4">
+          <article class="post-item pb-5">
+            <div class="post-image">
+              <a href="blog-single.html"><img src="images/blog1.jpg" alt="image" class="img-fluid"></a>
+            </div>
+            <div class="post-content">
+              <a href="#" class="text-decoration-none">
+                <p class="blog-topic text-uppercase mt-3">Roofs / 12 jan, 2022</p>
+              </a>
+              <a href="#" class="text-decoration-none">
+                <h4 class="blog-title my-3">Main thing to remember while Roofing</h4>
+              </a>
+              <p>Dignissim lacus, turpis ut suspendisse vel tellus. Turpis purus, gravida orci,
+                fringilla...</p>
+            </div>
+          </article>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <hr>
+
+  <section id="footer">
+    <div class="container footer-container ">
+      <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 my-5 py-5 ">
+
+        <div class=" col-md-4 mt-5 mt-md-0 ">
+          <img src="images/main-logo.png" alt="image" class="my-3">
+          <p class="">Elit adipi massa diam in dignissim. Sagittis pulvinar ut dis venenatis nunc nunc vitae
+            aliquam vestibulum.</p>
+          <div class="d-flex align-items-center ">
+            <a href="#" target="_blank"><iconify-icon class="social-link-icon active pe-4"
+                icon="mdi:facebook"></iconify-icon></a>
+            <a href="#" target="_blank"><iconify-icon class="social-link-icon pe-4"
+                icon="mdi:twitter"></iconify-icon></a>
+            <a href="#" target="_blank"><iconify-icon class="social-link-icon pe-4"
+                icon="mdi:instagram"></iconify-icon></a>
+            <a href="#" target="_blank"><iconify-icon class="social-link-icon pe-4"
+                icon="mdi:linkedin"></iconify-icon></a>
+            <a href="#" target="_blank"><iconify-icon class="social-link-icon pe-4"
+                icon="mdi:youtube"></iconify-icon></a>
+          </div>
+
+        </div>
+
+        <div class="col-md-2 offset-md-1">
+          <h5 class="py-3">Our services</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-3"><a href="#" class="nav-link fw-normal p-0 "> Roof replacement</a>
+            </li>
+            <li class="nav-item mb-3"><a href="#" class="nav-link fw-normal p-0 "> Damage repairs </a>
+            </li>
+            <li class="nav-item mb-3"><a href="#" class="nav-link fw-normal p-0 "> Roof repair</a>
+            </li>
+            <li class="nav-item mb-3"><a href="#" class="nav-link fw-normal p-0 "> Roof Solar System</a>
+            </li>
+            <li class="nav-item mb-3"><a href="#" class="nav-link fw-normal p-0 "> Roof coating</a></li>
+          </ul>
+        </div>
+        <div class="col-md-2 ">
+          <h5 class="py-3">Quick links</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-3"><a href="#" class="nav-link fw-normal p-0 "> Our locations </a>
+            </li>
+            <li class="nav-item mb-3"><a href="#" class="nav-link fw-normal p-0 "> About us </a>
+            </li>
+            <li class="nav-item mb-3"><a href="#" class="nav-link fw-normal p-0 "> Our gallery </a>
+            </li>
+            <li class="nav-item mb-3"><a href="#" class="nav-link fw-normal p-0 "> Privacy Policy</a></li>
+            <li class="nav-item mb-3"><a href="#" class="nav-link fw-normal p-0 "> Contact us </a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 ">
+          <h5 class="py-3">Contact Info</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item d-flex mb-3">
+              <iconify-icon class="contact-icon pe-3" icon="ion:location"></iconify-icon>
+              <a href="#" class="nav-link p-0 "> 163 Elm Drive, NYC, USA </a>
+            </li>
+            <li class="nav-item d-flex mb-3">
+              <iconify-icon class="contact-icon pe-3" icon="ion:call"></iconify-icon><a href="#" class="nav-link p-0 ">
+                (+089) 234-516-6123 </a>
+            </li>
+            <li class="nav-item d-flex mb-3">
+              <iconify-icon class="contact-icon pe-3" icon="ion:mail"></iconify-icon><a href="#" class="nav-link p-0 ">
+                info@yourdomain.com </a>
+            </li>
+
+          </ul>
+        </div>
+
+
+
+      </footer>
+    </div>
+
+
+
+    <footer class="d-flex flex-wrap justify-content-between align-items-center border-top"></footer>
+
+    <div class="container">
+      <footer class="d-flex flex-wrap justify-content-between align-items-center py-2 pt-4">
+        <div class="col-md-6 d-flex align-items-center">
+          <p>© 2023 Roofers - All rights reserved</p>
+
+        </div>
+        <div class="col-md-6 d-flex align-items-center justify-content-end">
+          <p class="">© 2023 Website By:<a href="https://templatesjungle.com/" class="website-link" target="_blank">
+              <b><u>TemplatesJungle</u></b></a></p>
+        </div>
+
+      </footer>
+    </div>
+  </section>
+
+  <!-- script ================================================== -->
+  <script src="js/jquery-1.11.0.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.7/dist/iconify-icon.min.js"></script>
+
+
+</body>
+
+</html>

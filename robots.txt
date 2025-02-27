@@ -1,0 +1,9 @@
+# Permitir que todos los motores de búsqueda rastreen el sitio
+User-agent: *
+Disallow: /aviso-legal/
+
+# Permitir que los motores de búsqueda rastreen todo lo demás
+Allow: /
+
+# Sitemaps
+Sitemap: https://www.tejadosyterrazasmadrid.com/sitemap.xml
